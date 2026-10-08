@@ -1,4 +1,4 @@
-![Testes](https://github.com/seu-usuario/webvuln-scanner/actions/workflows/tests.yml/badge.svg) 
+![Testes](https://github.com/ogustavorw/webvuln-scanner/actions/workflows/tests.yml/badge.svg) 
  
  WebVuln Scanner
 
