@@ -80,13 +80,15 @@ pytest -v
 
 Os testes usam respostas HTTP simuladas, então não dependem de internet nem de alvos externos.
 
- Estudo de caso: encontrando e corrigindo vulnerabilidades reais
+ ## Estudo de caso: encontrando e corrigindo vulnerabilidades reais
 
-Para validar a ferramenta, apliquei-a no meu próprio site em produção (`rawmodels.co`). O scanner encontrou **4 vulnerabilidades** — todas relacionadas a headers de segurança ausentes.
+Para validar a ferramenta, apliquei-a em um site em produção que desenvolvi e administro para um cliente (domínio omitido por privacidade — nos exemplos, uso `https://exemplo.com`). O scanner encontrou **4 vulnerabilidades** — todas relacionadas a headers de segurança ausentes.
 
 **Antes:**
 
 ```
+$ webvuln scan https://exemplo.com
+
 [ALTA] Header ausente: Content-Security-Policy
 [ALTA] Header ausente: Strict-Transport-Security
 [MÉDIA] Header ausente: X-Frame-Options
@@ -105,7 +107,7 @@ Para validar a ferramenta, apliquei-a no meu próprio site em produção (`rawmo
 **Depois:**
 
 ```
-Alvo: https://rawmodels.co/
+$ webvuln scan https://exemplo.com
 
 0 achado(s).
 ```
