@@ -1,3 +1,5 @@
+![Testes](https://github.com/seu-usuario/webvuln-scanner/actions/workflows/tests.yml/badge.svg) 
+ 
  WebVuln Scanner
 
 Scanner de vulnerabilidades web de linha de comando, desenvolvido em Python como projeto de portfólio para demonstrar habilidades em segurança ofensiva, engenharia de software e desenvolvimento de CLIs.
